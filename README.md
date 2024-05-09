@@ -19,11 +19,28 @@ STEP 5:Save the data to the file.
 # FEATURE SELECTION:
 Feature selection is to find the best set of features that allows one to build useful models. Selecting the best features helps the model to perform well.
 The feature selection techniques used are:
+
 1.Filter Method
+
 2.Wrapper Method
+
 3.Embedded Method
 
 # CODING AND OUTPUT:
-       # INCLUDE YOUR CODING AND OUTPUT SCREENSHOTS HERE
-# RESULT:
-       # INCLUDE YOUR RESULT HERE
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+data=pd.read_csv("income(1) (1).csv",na_values=[ " ?"])
+data
+```
+![image](https://github.com/Sriram8452/EXNO-4-DS/assets/118708032/877b7ff2-91af-45be-bb41-3f3e51c87cec)
+
+```
+data.isnull().sum()
+```
+![image](https://github.com/Sriram8452/EXNO-4-DS/assets/118708032/24d52a3a-6d98-4504-aff8-71cf74757cc4)
+
